@@ -2,10 +2,6 @@
 
 SmartChatBot is a fully responsive, multi-page chatbot web interface designed for experimentation, education, and extension. It currently functions as an echo chatbot — whatever the user types, the bot responds with the same message.
 
-## 🌐 Live Preview
-
-> *Optional: Add your GitHub Pages or Netlify link here once deployed.*
-
 ## 📁 Project Structure
 
 chatbot-interface/
@@ -40,3 +36,5 @@ Edit
 ### Prerequisites
 - A modern browser (Chrome, Edge, Firefox)
 - No backend needed — this is fully static HTML/CSS/JS
+
+[Website](https://neerajbabudevagiri.github.io/Chatbot-interface/)
