@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | SmartChatBot</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="home-container">
+    <header>
+      <div class="logo">🤖 SmartChatBot</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="chat.html">Chat</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <main class="home-main">
+      <h1>Contact Us</h1>
+      <p>If you have feedback, questions, or just want to say hello, feel free to reach out.</p>
+
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div id="formStatus"></div>
+    </main>
+
+    <footer>
+      <p>© 2025 SmartChatBot. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      const status = document.getElementById("formStatus");
+      status.innerText = "✅ Message sent! (form submission is mocked)";
+      event.target.reset();
+    }
+  </script>
+</body>
+</html>
